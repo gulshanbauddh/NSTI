@@ -1,3 +1,8 @@
+setTimeout(() => {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("content").style.display = "block";
+}, 3000); 
+
 const codeFiles = [
   { title: "Document Write", file: "codes/pg_1_document_write.html" },
   { title: "Script Inside Head", file: "codes/pg_2_scriptInsideHead.html" },
@@ -447,7 +452,3 @@ function goToTop() {
   });
 }
 
-setTimeout(() => {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("content").style.display = "block";
-}, 3000); 
