@@ -1,7 +1,7 @@
 setTimeout(() => {
   document.getElementById("loader").style.display = "none";
   document.getElementById("content").style.display = "block";
-}, 2500);
+}, 1000);
 
 const codeFiles = [
   { title: "Document Write", file: "codes/pg_1_document_write.html" },
