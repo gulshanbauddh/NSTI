@@ -3,23 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <title>JavaScript Code Library :</title>
-    <!-- <link rel="stylesheet" href="/prismjs/prism.css" /> -->
-    <link rel="stylesheet" href="./prismjs/prism.css" />
-    <script src="/prismjs/peism.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-okaidia.min.css"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <h1 class="mainHeading">JavaScript / HTML Code Library</h1>
-
-    <button id="themeToggle">🌙 Dark</button>
-
-    <div id="indexPanel"></div>
-
-    <div id="container">
-      <button id="topBtn" onclick="goToTop()">↑ Top</button>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="spinner"></div>
+      <p>Loading...</p>
     </div>
+    <!-- Main Content -->
+    <div id="content">
+      <h1 class="mainHeading">JavaScript / HTML Code Library</h1>
 
+      <button id="themeToggle">🌙 Dark</button>
+
+      <div id="indexPanel"></div>
+
+      <div id="container">
+        <button id="topBtn" onclick="goToTop()">↑ Top</button>
+      </div>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>

@@ -5,6 +5,13 @@ body {
   padding: 20px;
 }
 
+.token .operator {
+  background-color: transparent;
+}
+
+pre[class*="language-"] {
+  background-color: #44444438;
+}
 .card {
   background: #252526;
   padding: 15px;
@@ -181,4 +188,44 @@ pre[class*="language-"] code {
 #indexPanel {
   scrollbar-width: thin; /* auto | thin */
   scrollbar-color: #4facfe #1e1e1e; /* thumb track */
+}
+
+/* Loader  */
+/* Loader full screen */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  z-index: 9999;
+}
+
+/* Spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #555;
+  border-top: 6px solid #00ffcc;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide content initially */
+#content {
+  display: none;
+  padding: 20px;
 }
